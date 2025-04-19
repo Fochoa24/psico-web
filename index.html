@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página del Psicólogo</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="./pages/trabajo.html">Trabajo</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="section fade-in">
+      <h1>Bienvenido a mi consulta</h1>
+      <p>Apoyo psicológico profesional para tu bienestar emocional.</p>
+      <button class="cta-button">Agenda una sesión</button>
+    </section>
+
+    <section id="sobre-mi" class="section fade-in">
+      <h2>Sobre mí</h2>
+      <div class="card">
+        <img src="/images/foto-psicologo.jpeg" alt="Foto del psicólogo">
+        <div>
+          <p>Soy psicólogo clínico con más de 10 años de experiencia. Mi enfoque es empático y centrado en la persona.</p>
+          <button class="toggle-btn">Ver más</button>
+          <div class="more-text hidden">
+            <p>He trabajado con adolescentes, adultos y parejas, abordando temas como ansiedad, depresión, autoestima y crisis vitales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trabajo" class="section fade-in">
+      <h2>Mi trabajo</h2>
+      <div class="work-grid">
+        <div class="work-box">
+          <i class="fas fa-brain"></i>
+          <h3>Terapia individual</h3>
+          <p>Espacio seguro para comprender y transformar tus emociones.</p>
+        </div>
+        <div class="work-box">
+          <i class="fas fa-users"></i>
+          <h3>Terapia de pareja</h3>
+          <p>Mejora la comunicación y fortalece los vínculos afectivos.</p>
+        </div>
+        <div class="work-box">
+          <i class="fas fa-child"></i>
+          <h3>Terapia para adolescentes</h3>
+          <p>Acompañamiento emocional en etapas complejas de crecimiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section fade-in">
+      <h2>Blog</h2>
+      <div class="blog-preview">
+        <div class="post">
+          <h3>¿Cómo manejar la ansiedad?</h3>
+          <p>Consejos prácticos para regular tus emociones en momentos difíciles.</p>
+          <a href="#">Leer más</a>
+        </div>
+        <div class="post">
+          <h3>Autoestima saludable</h3>
+          <p>Claves para mejorar la relación contigo mismo.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

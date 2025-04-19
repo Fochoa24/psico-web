@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  background-color: #4a90e2;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #cce6ff;
+}
+
+.navbar a i {
+  margin-right: 8px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.section.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #357bd8;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+.more-text.hidden {
+  display: none;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.work-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-box:hover {
+  transform: translateY(-5px);
+}
+
+.work-box i {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.blog-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #4a90e2;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.post:hover {
+  background: #eef6ff;
+}
+
+.post a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkedin-button {
+  margin-top: 2rem; /* agrega espacio entre el texto y el botón */
+  display: inline-block; /* asegura que se comporte como un bloque en línea */
+}
