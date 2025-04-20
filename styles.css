@@ -55,6 +55,48 @@ body {
   transition: all 0.8s ease-out;
 }
 
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #cccccc55;
+  margin: 1%;
+  align-self: center;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1cm auto;
+  text-align: center;
+} 
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4a90e2;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
 .section.fade-in.visible {
   opacity: 1;
   transform: translateY(0);
@@ -160,4 +202,68 @@ h1, h2 {
 .linkedin-button {
   margin-top: 2rem; /* agrega espacio entre el texto y el botón */
   display: inline-block; /* asegura que se comporte como un bloque en línea */
+}
+
+
+/* 🟦 Fondo del popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 🟨 Contenedor del formulario */
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.3s ease;
+}
+
+/* ❌ Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 🔵 Campos del formulario */
+.popup-content form input,
+.popup-content form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* 🧪 Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* 🔒 Oculto por defecto */
+.hidden {
+  display: none;
 }

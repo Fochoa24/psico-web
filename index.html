@@ -22,11 +22,13 @@
   </header>
 
   <main>
-    <section id="inicio" class="section fade-in">
+    <section id="inicio" class="hero centered-section fade-in">
       <h1>Bienvenido a mi consulta</h1>
       <p>Apoyo psicológico profesional para tu bienestar emocional.</p>
-      <button class="cta-button">Agenda una sesión</button>
     </section>
+
+    <hr class="divider"/>
+  
 
     <section id="sobre-mi" class="section fade-in">
       <h2>Sobre mí</h2>
@@ -63,6 +65,24 @@
       </div>
     </section>
 
+    <section class="section fade-in center-button">
+      <a href="mailto:contacto@psicologo.com" class="cta-button">Agendar una sesión</a>
+    </section>
+
+    <div id="popup-form" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2>Formulario de contacto</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo electronico" required>
+          <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+          <button type="button" class="cancel-btn" onclick="closeForm()">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
     <section id="blog" class="section fade-in">
       <h2>Blog</h2>
       <div class="blog-preview">
@@ -78,6 +98,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
 </body>
